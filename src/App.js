@@ -23,7 +23,6 @@ function App() {
 
     const response = await api.post('/repositories', newRepository);
     setRepositories([...repositories, response.data]);
-    console.log(repositories);
   }
 
   
